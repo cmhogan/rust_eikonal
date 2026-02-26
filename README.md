@@ -8,8 +8,7 @@ tile-based parallel scheduler that scales across all available cores.
 
 > **Warning**
 > This is experimental research code. There is no guarantee of correctness
-> or fitness for any particular use. Use at your own risk. The API is
-> unstable and may change without notice.
+> or fitness for any particular use. Use at your own risk. 
 
 ## Features
 
