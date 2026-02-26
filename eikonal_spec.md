@@ -30,7 +30,7 @@ The tile size should be configurable at construction time.
 
 #### Partial Tiles
 
-When the grid dimensions are not evenly divisible by the tile size, the last tile along each axis is a **partial tile** containing fewer nodes. For example, a $300 \times 300$ grid with tile size 8 produces $38$ tiles along each axis: 37 full $8 \times 8$ tiles and 1 partial $4 \times 8$ (or $8 \times 4$) tile. The tile count along axis $d$ is $\lceil \text{shape}[d] / \text{tile\_size}[d] \rceil$.
+When the grid dimensions are not evenly divisible by the tile size, the last tile along each axis is a **partial tile** containing fewer nodes. For example, a $300 \times 300$ grid with tile size 8 produces $38$ tiles along each axis: 37 full $8 \times 8$ tiles and 1 partial $4 \times 8$ (or $8 \times 4$) tile. The tile count along axis $d$ is $\lceil \text{shape}[d] / \text{tile size}[d] \rceil$.
 
 The update kernel must respect the actual extent of each tile by clamping iteration bounds to the grid boundary. Partial tiles participate in the Active List and neighbor activation identically to full tiles.
 
